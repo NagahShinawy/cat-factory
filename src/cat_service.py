@@ -4,7 +4,7 @@ created by Nagaj at 12/05/2021
 import os
 from http import HTTPStatus
 import requests
-from constants import CATS_URL, DOWNLOAD
+from constants import CATS_URL, DOWNLOAD, JPG
 
 
 def get_cat(folder, catname):
@@ -24,7 +24,7 @@ def get_data_from_url(url):
 
 
 def save_image(folder, catname, data):
-    single_catpath = os.path.join(folder, catname + ".jpg")
+    single_catpath = os.path.join(folder, catname + JPG)
     if not os.path.isfile(single_catpath):
         with open(single_catpath, "wb") as f:
             f.write(data)

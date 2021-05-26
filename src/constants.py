@@ -12,6 +12,7 @@ CAT_NAME = "lolcat{i}"
 # ###############  SERVICE  ###################
 
 CATS_URL = "http://consuming-python-services-api.azurewebsites.net/cats/random/"
+JPG = '.jpg'
 
 # ###########  commands #######################
 WINDOWS = "Windows"
@@ -22,7 +23,6 @@ LINUX_COMMAND = "xdg-open"
 
 MACOS = "Darwin"
 MACOS_COMMAND = "open"
-
 
 # ###########  messages ##########################
 CREATE_FOLDER = "CREATING NEW FOLDER AT '{}'"
